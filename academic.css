@@ -387,14 +387,14 @@ td{
 	font-size: 10px;
 	text-align: right;
 	border: 1px solid black;
-	border-top: 2px solid black;
+	border-top: 1px solid black;
 }
 
 #altlogdate{
 	font-size: 10px;
 	text-align: right;
 	border: 1px solid black;
-	border-top: 2px solid black;
+	border-top: 1px solid black;
 }
 
 /*Log End*/
