@@ -1,0 +1,203 @@
+/*Doomsday_Archive_CSS*/
+
+/*Main CSS, Do not Modify!*/
+@font-face {
+    font-family: 'OldEngFont';
+    src: url('oldeng.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Times';
+	src: url('times.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Towne';
+	src: url('towne.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'write';
+    src: url('write.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#e{
+	font-family: towne;
+    font-size: 70px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Times', arial;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+p{
+	
+}
+
+table{
+	font-family: arial;
+	border-collapse: collapse;
+	width: 200px;
+}
+
+th{
+	border: 1px solid white;
+	text-align: left;
+	padding: 8px;
+}
+
+td{
+	border: 1px solid #e6e6e6;
+	text-align: left;
+	padding: 8px;
+	background-color: white;
+}
+
+#bg{
+	background-color: #e6e6e6;
+}
+
+#br{
+	border: 1px solid #e6e6e6;
+}
+
+/*tr:nth-child(odd) {
+	background-color: #dddddd;
+}*/
+
+/*-------------------------*/
+
+/*Important, Do not Modify!*/
+.top{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	border: 1px solid none;
+}
+
+.subtitle{
+    font-family: 'OldEngFont', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
+    font-size: 120%;
+	width: 50%;
+    margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 3.8%;
+	border: 1px solid none;
+}
+
+#clr{
+	color: grey;
+}
+
+#dateTime {
+    font-size: 20px;
+    font-family: Serif;
+    color: #333;
+	width: 50%;
+    text-align: right;
+    margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 3.8%;
+	border: 1px solid none;
+}
+
+.title{
+	font-family: 'OldEngFont', arial;
+	font-size: 58px;
+	color: black;
+	text-align: left;
+	margin-left: 50px;
+}
+
+
+.lineL{
+	margin-bottom: -1px;
+}
+
+.lineN{
+	margin-top: 3px;
+}
+
+/*-------------------------*/
+/*Start custom css here*/
+
+
+
+/*Forms*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    border: 1px solid none;
+    border-radius: 0px;
+    background-color: #fff;
+	margin-top: 2%;
+	margin-left: 4%;
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea, select{
+	font-family: write;
+	font-size: 125%;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+	border: 1px solid white;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+	outline: none;
+}
+
+textarea{
+    resize: none; /* Disable resizing */
+    width: 100%; /* Fixed width */
+    height: 150px; /* Fixed height */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus{
+    border: 1px solid #ccc; /* Custom focus border */
+}
+
+input[type="submit"]{
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end;
+}
+
+input[type="submit"]:hover{
+	background-color: #45a049;
+}
+
+/*End of Form*/

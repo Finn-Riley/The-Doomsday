@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="none">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="feedback.css">
+	<title>The Doomsday</title>
+	<link rel="icon" type="image" href="icon.png">
+</head>
+<header>
+		<div class="top">
+			<div class="subtitle"><a href="home.html"><span id="clr">The End Gazette</span></a></div>
+			<div id="dateTime"></div>
+		</div>
+		<script src="academic.js"></script>
+		<hr class="lineN" width="92%" size="2" color="black" noshade>
+		<div class="title"><span id="e">F</span>eedback</div>
+		<hr class="lineL" width="92%" size="2" color="black" noshade>
+		<hr class="lineL" width="92%" size="1" color="black" noshade>		
+</header>
+<body>
+    <form action="/submit-feedback" method="post" autocomplete="off">
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Alias Field -->
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="alias" name="alias" placeholder="Enter a nickname" title="What do I call you?" required>
+
+        <!-- Feedback Field -->
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="6" placeholder="Enter your feedback" required></textarea>
+
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

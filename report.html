@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="none">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="report.css">
+	<title>The Doomsday</title>
+	<link rel="icon" type="image" href="icon.png">
+</head>
+<header>
+	<div class="mc">
+		<div class="cb1">
+			<div id="dateTime"></div>
+			<script src="academic.js"></script>
+			<hr class="lineN" width="90%" size="2" color="black" noshade>
+			<div class="title">Report a Problem</div>
+			<hr class="lineL" width="90%" size="1" color="black" noshade>
+    <form action="/submit-feedback" method="post" autocomplete="off">
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Alias Field -->
+        <label for="alias">Nickname:</label>
+        <input type="text" id="alias" name="alias" placeholder="Enter a nickname" title="What do i call you?"required>
+
+        <!-- What Page Field -->
+        <label for="page">Page:</label>
+        <select id="page" name="page" title="Where do you experience the problem?"required>
+			<option value="" disabled selected>Select an option</option>
+            <option value="page1">Page 1 | Front Page</option>
+            <option value="page2">Page 2</option>
+            <option value="page3">Page 3 | Academics</option>
+            <option value="page4">Page 4 | Leisure</option>
+            <option value="page5">Page 5 | Archive</option>
+            <option value="page6">Page 6 | Back Page</option>
+        </select>
+		
+        <!-- Feedback Field -->
+        <label for="feedback">Problem:</label>
+        <textarea id="feedback" name="feedback" rows="6" placeholder="State your issue/s" required></textarea>
+
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+			<hr class="lineL" width="90%" size="1" color="black" noshade>				
+			<div class="subtitle"><a href="home.html"><span id="clr">The End Gazette</span></a></div>
+		</div>
+	</div>
+</header>
+<body>
+
+</body>
+</html>

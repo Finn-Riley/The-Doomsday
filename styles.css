@@ -1,0 +1,57 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.countdown-container {
+	font-family: arial;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+	border: 1px solid black;
+}
+
+.doomsday {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.countdown {
+    font-size: 24px;
+    font-weight: bold;
+	border: 1px solid black;
+}
+
+.title {
+	flex: 5;
+    font-family: 'Old English Text MT', serif;
+    font-size: 115px;
+    color: black;
+    text-align: center;
+    margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.quote {
+	flex: 1;
+    font-style: italic;
+    margin: 0;
+	border: 1px solid black;
+	padding: 5px;
+}
