@@ -1,0 +1,802 @@
+@font-face {
+    font-family: 'OldEngFont';
+    src: url('oldeng.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Times';
+	src: url('times.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agency';
+    src: url('agency.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Varsity';
+    src: url('varsity.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Techno';
+    src: url('techno.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Selection color*/
+::selection {
+  background-color: grey; /* Highlight color */
+  color: black; /* Text color */
+}
+
+/*Custom Cursor*/
+html {
+  cursor: url('cursors/realistic/rcmg24.png'), default;
+}
+
+/*Pointer cursor*/
+button {
+  cursor: url('cursors/realistic/rpoint24.png'), pointer;
+}
+
+.custom-cursor {
+    cursor: url('cursors/realistic/rpencil24.png'), text;
+}
+
+/*Text cursor*/
+input[type="text"], textarea {
+  cursor: url('cursors/realistic/rpencil24.png'), text;
+}
+
+/*Move cursor*/
+.draggable {
+  cursor: url('path-to-move-cursor.png'), move;
+}
+
+/*Grab and grabbing cursor*/
+.grabbable {
+  cursor: url('path-to-grab-cursor.png'), grab;
+}
+.grabbable:active {
+  cursor: url('path-to-grabbing-cursor.png'), grabbing;
+}
+
+/*Not-allowed cursor*/
+.disabled {
+  cursor: url('cursors/realistic/rwarning24.png'), not-allowed;
+}
+/*End of Custom Cursor*/
+
+a{
+	color: black;
+	text-decoration: none;
+	cursor: url('cursors/realistic/rpoint24.png'), pointer;
+}
+
+header{
+
+}
+
+body {
+	font-family: 'Times', arial;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+p{
+	
+}
+
+#Ctable{
+	border-collapse: collapse;
+	width: 100%;
+	font-weight: normal;
+}
+
+#Ctable th{
+	text-align: center;
+	padding: 8px;
+	width: 7%;
+}
+
+#Ctable td{
+	padding: 8px;
+	width: 30%;
+}
+
+#lg{
+	background-color: #fbfbfb;
+	border-top: 5px solid #fbfbfb;
+	border-bottom: 5px solid #fbfbfb;
+}
+
+
+#brdblk{
+	background-color: black;
+	border: 1px solid black;
+}
+
+#brdblks{
+	background-color: black;
+	border-top: 1px solid black;
+	border-right: 10px solid black;
+	border-bottom: 1px solid black;
+}
+
+#lbrdblk{
+	background-color: black;
+	border-top: 1px solid black;
+	border-left: 10px solid black;
+	border-right: 1px solid black;
+	border-bottom: 10px solid black;
+}
+
+#ulbrdblk{
+	background-color: black;
+	border-top: 5px solid black;
+	border-left: 10px solid black;
+	border-right: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+#llbrdblk{
+	background-color: black;
+	border-top: 10px solid black;
+	border-left: 10px solid black;
+	border-right: 10px solid black;
+	border-bottom: 5px solid black;
+}
+
+#tp{
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+
+#lb{
+	background-color: #262626;
+	border: 10px solid black;
+}
+
+#sc{
+	background-color: white;
+	border: 1px solid black;
+	width: 1%;
+	font-size: 1px;
+}
+
+table{
+	font-family: arial;
+	font-size: 16px;
+	border-collapse: collapse;
+}
+
+th{
+	text-align: left;
+	padding: 8px;
+}
+
+td{
+	border: 1px solid #e6e6e6;
+	text-align: left;
+	font-weight: normal;
+	padding: 8px;
+	background-color: white;
+}
+
+#full{
+    font-family: Serif;
+    font-size: 20px;
+	width: 100%;
+}
+
+#yeartitle{
+    font-family: 'varsity';
+	font-weight: bold;
+    font-size: 30px;
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+#yearborder{
+	background-color: #fbfbfb;
+	color: black;
+	border-top: 2px solid black;
+	border-bottom: 3px double black;
+}
+
+#semtitle{
+    font-family: 'varsity';
+	font-weight: bold;
+    font-size: 20px;
+	width: 100%;
+	margin-top: -1%;
+}
+
+#semborder{
+	border-top: 1px solid black;
+}
+
+#semborderf{
+	border-top: 2px solid black;
+}
+
+#columntitle{
+    font-family: serif;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+    font-size: 20px;
+	width: 100%;
+}
+
+#subject{
+	width: 20%;
+	background-color: #fbfbfb;
+	border-top: 2px solid black;
+	border-right: 1px solid grey;
+	border-bottom: 1px solid black;
+}
+
+#type{
+	width: 20%;
+	background-color: #fbfbfb;
+	border-top: 2px solid black;
+	border-right: 1px solid grey;	
+	border-bottom: 1px solid black;
+}
+
+#coverage{
+	width: 15%;
+	background-color: #fbfbfb;	
+	border-top: 2px solid black;
+	border-right: 1px solid grey;	
+	border-bottom: 1px solid black;
+}
+
+#upload{
+	width: 20%;
+	background-color: #fbfbfb;	
+	border-top: 2px solid black;
+	border-bottom: 1px solid black;
+}
+
+#download{
+	width: 5%;
+}
+
+#DL{
+	width: 2%;
+}
+
+#data{
+	font-family: serif;
+	text-align: left;
+	background-color: white;
+	border-right: 1px solid grey;
+	border-left: none;	
+	border-bottom: 1px solid black;	
+}
+
+#lastdata{
+	font-family: serif;
+	text-align: left;
+	background-color: white;
+	border-right: none;
+	border-bottom: 1px solid black;	
+}
+
+#dldata{
+	text-align: left;
+	background-color: white;
+	border: none;
+}
+
+#NA{
+	background-color: white;
+	text-align: center;
+	border-right: none;
+	border-left: none;	
+	border-bottom: 1px solid black;
+}
+
+#EMT{
+	height: 25px;
+	background-color: white;
+	text-align: center;
+	color: white;
+	border: none;	
+}
+
+#SPC{
+	height: 15px;
+	background-color: white;
+	border: none;	
+}
+
+#event{
+    font-family: 'varsity';
+	font-weight: bold;
+    font-size: 30px;
+	width: 100%;
+	background-color: #fbfbfb;
+	color: black;
+	border-top: 2px solid black;
+	border-bottom: 3px double black;
+}
+
+/*Log Design*/
+#logtable{
+	border-left: 1px solid black;
+}
+
+#spacelog{
+	height: 15px;
+	background-color: white;
+	border: none;	
+}
+
+#logicon{
+	width: 10%;
+	background-color: #fbfbfb;
+	border: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#noicon{
+	width: 10%;
+	border: 1px solid black;
+	border-right: hidden;
+}
+
+#logtitle{
+	font-family: serif;
+	font-size: 20px;
+	background-color: #fbfbfb;
+	border: 1px solid black;
+	font-weight: bold;
+}
+
+#logcontent{
+	font-family: serif;
+	font-size: 20px;
+	border: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#logalt{
+	font-family: serif;
+	font-size: 20px;
+	border: 1px solid black;
+	border-left: hidden;
+}
+
+#logdate{
+	font-size: 10px;
+	text-align: right;
+	border: 1px solid black;
+	border-top: 1px solid black;
+}
+
+#altlogdate{
+	font-size: 10px;
+	text-align: right;
+	border: 1px solid black;
+	border-top: 1px solid black;
+}
+
+/*Log End*/
+#rightborder{
+	border-right: 1px solid black;
+}
+
+#sem{
+	width: 30%;
+}
+
+.title{
+	font-family: 'Times', arial;
+	font-size: 58px;
+	color: black;
+}
+
+.tc{
+	display: flex;
+	flex-direction: row;
+	height: 83px;
+	margin-top: -8px;
+	margin-bottom: -8px;
+	margin-left: 50px;
+	margin-right: 50px;
+	align-items: center;
+	justify-content: center;
+	background-color: #fbfbfb;
+	border: 1px solid none;
+}
+
+.subtitle{
+    font-family: 'OldEngFont', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
+    font-size: 29px;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*Topmost Container*/
+.acad{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 200px;
+	margin-left: 48px;
+	margin-right: 48px;
+	margin-top: 8%;
+	border: 1px solid none;
+}
+
+.sem{
+	flex-direction: row;
+	background-color: #fbfbfb;
+	margin-right: none;
+	border: 1px solid none;
+}
+
+.semt{
+	font-family: 'Varsity', arial;
+	font-size: 58px;
+	color: black;
+	text-align: right;
+	-webkit-text-stroke:1px white;
+	border: 1px solid none;
+}
+
+.count{
+ 	display: flex;
+	flex-direction: row;
+	width: 70%;
+	height: 200px;
+	background-color: black;
+	border: 1px solid none;
+}
+
+.sc1{/*remdays*/
+ 	display: flex;
+	flex-direction: column;
+	width: 30%;
+	border: 1px solid pink;
+}
+
+.days{
+ 	display: flex;
+	flex-direction: row;
+}
+
+.dt{
+	font-family: 'Agency', arial;
+	font-size: 30px;
+	width: 10%;
+	color: white;
+	text-align: center;
+	border: none;
+}
+
+.rem{
+	font-family: 'Agency', arial;
+	font-size: 58px;
+	color: white;
+	text-align: center;
+}
+
+.cd{
+	font-family: 'Agency', arial;
+	font-size: 30px;
+	color: white;
+	text-align: left;
+	width: 70%;
+	border: 1px solid white;
+}
+
+#mondayCount,
+#tuesdayCount,
+#thursdayCount,
+#fridayCount {
+    font-family: 'Techno', monospace;
+    font-size: 50px;
+    color: red;
+    margin: none;
+}
+
+.sc2{/*for remcount*/
+	flex-direction: column;
+	width: 70%;
+	border: 1px solid lightgreen;
+}
+
+#countMonths,
+#countWeeks,
+#countDays,
+#countHours,
+#countMinutes,
+#countSeconds {
+    font-family: 'Techno', monospace;
+    font-size: 50px;
+    color: red;
+    margin: none;
+}
+/*End of Topmost Container*/
+
+.lineL{
+	margin-bottom: -1px;
+}
+
+.lineN{
+	margin-top: 3px;
+}
+
+.topC{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 43%;
+	margin-left: 48px;
+	margin-right: 48px;
+	margin-top: 9%;
+	margin-bottom: 2%;
+	border: 1px solid none;
+}
+
+.infoC{
+	font-family: Serif;
+	font-size: 20px;
+	text-align: left;
+	border: 1px dashed none;
+}
+
+.countdownC{
+	font-family: arial;
+    display: flex;
+	flex: 0 0 200px;
+    flex-direction: column;
+    align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid none; /*For easy troubleshooting*/
+}
+
+.countdownT{
+    font-size: 26px;
+    font-weight: bold;
+	text-align: center;
+}
+
+.countdown{
+    font-size: 24px;
+    font-weight: bold;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.mainC{
+	display: flex;
+	flex-direction: row;
+	height: 338px;
+	margin-left: 48px;
+	margin-right: 48px;
+	margin-bottom: 3%;
+	border: 1px solid none;
+}
+
+.C2{
+	display: flex;
+	flex-direction: row;
+	height: 800px;
+	margin-left: 48px;
+	margin-right: 48px;
+	margin-bottom: 3%;
+	border: 1px solid none;
+}
+
+.archive{
+    font-family: Serif;
+	font-weight: bold;
+	font-size: 20px;
+	width: 70%;
+	margin-right: 1%;
+	height: 415px;
+	border-right: 1px solid black;
+}
+
+.log{
+	width: 25.9%;
+	margin-left: 3%;
+	height: 800px;
+	border: 1px solid none;
+}
+
+#logDT{
+	font-size: 10px;
+	text-align: right;
+}
+
+#dateTime {
+    font-size: 20px;
+    font-family: Serif;
+    color: #333;
+    text-align: right;
+    margin-top: 5px;
+	margin-right: 50px;
+}
+
+.1stC{
+	display: flex;
+	flex-direction: row;
+	height: 350px;
+	margin-left: 48px;
+	margin-right: 48px;
+	border: 1px solid red;
+}
+
+.2ndC{
+	display: flex;
+	flex-direction: row;
+	height: 800px;
+	margin-left: 48px;
+	margin-right: 48px;
+	border: 1px solid blue;
+}
+
+/*
+.maintable{
+    font-family: Serif;
+	font-weight: bold;
+	font-size: 20px;
+	width: 75%;
+	margin-right: 1%;
+	height: 200px;
+	border: 1px dashed green;
+}
+
+.event{
+	width: 25%;
+	margin-left: 2%;
+	height: 800px;
+	border: 1px solid none;
+}
+
+#tabletitle{
+	font-family: 'Agency';
+	font-weight: bold;
+	text-shadow: none;
+	text-align: left;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-bottom: 3%;
+	width: 100%;
+}
+*/
+
+/*Start of Footer*/
+.fc{
+	display: flex;
+	flex-direction: row;
+	width: 92.3%;
+	margin-left: 49px;
+	font-family: arial;
+	align-items: center;
+	border: 1px solid lightgray;
+}
+.logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#logo{
+	width: 80px;
+	height: 80px;
+	border: 1px solid lightgray;
+}
+
+.divider{
+	display: flex;
+	justify-content: center;
+	width: 50px;
+	border: 1px dashed none;
+}
+
+.fcontact{
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	margin-left: 365px;
+	border: 1px solid none;
+}
+
+.ffeedback{
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	border: 1px solid none;
+}
+
+.freport{
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	border: 1px solid none;
+}
+
+/*End of Footer*/
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted none; /* Add a dotted underline to indicate hoverable area */
+	cursor: url('cursors/realistic/rcmg24.png'), default;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden; /* Hide tooltip text by default */
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%; /* Position the tooltip text above the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Triangle pointer */
+.tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position pointer at the bottom of the tooltip text */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show tooltip text on hover */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Hide the emoji initially */
+td:last-child .hidden-emoji {
+    visibility: hidden;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Show the emoji when the row is hovered */
+tr:hover td:last-child .hidden-emoji {
+    visibility: visible;
+}
+
+/* Change the cursor to pointer when hovering over the emoji link */
+.hidden-emoji:hover {
+	cursor: url('cursors/realistic/rpoint24.png'), pointer;
+}
