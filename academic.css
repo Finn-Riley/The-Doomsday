@@ -50,7 +50,7 @@ button {
 }
 
 .custom-cursor {
-    cursor: url('cursors/realistic/rpencil24.cur'), text;
+    cursor: url('cursors/realistic/rpencil24.png'), text;
 }
 
 /*Text cursor*/
