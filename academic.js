@@ -109,7 +109,7 @@ function detectMobileDevice() {
 // Function to display a notification if user is on a mobile device
 function notifyMobileUser() {
     if (detectMobileDevice()) {
-        alert("You are viewing this page on a mobile device. For the best experience, please consider using a desktop or turning on desktop site. - Drew :>");
+        alert("You are viewing this page on a mobile device. Drew is currently severly lazy to create mobile view. For the best experience, please consider using a desktop. - Drew :>");
     }
 }
 
