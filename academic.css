@@ -553,7 +553,7 @@ td{
 	gap: 43%;
 	margin-left: 48px;
 	margin-right: 48px;
-	margin-top: 9%;
+	margin-top: 5%;
 	margin-bottom: 2%;
 	border: 1px solid none;
 }
@@ -561,7 +561,7 @@ td{
 .infoC{
 	align-self: flex-start;
 	font-family: Serif;
-	font-size: 10px;
+	font-size: 20px;
 	text-align: left;
 	border: 1px solid none;
 }
@@ -569,7 +569,7 @@ td{
 .infoCR{
 	align-self: flex-end;
 	font-family: Serif;
-	font-size: 5px;
+	font-size: 10px;
 	font-style: italic;
 	text-align: right;
 	border: 1px dashed none;
