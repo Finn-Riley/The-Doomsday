@@ -555,7 +555,7 @@ td{
 	margin-right: 48px;
 	margin-top: 9%;
 	margin-bottom: 2%;
-	border: 1px solid none;
+	border: 1px solid red;
 }
 
 .infoC{
@@ -563,6 +563,7 @@ td{
 	font-size: 20px;
 	text-align: left;
 	border: 1px dashed none;
+	border: 1px solid blue;
 }
 
 .infoCR{
@@ -570,7 +571,7 @@ td{
 	font-size: 20px;
 	font-style: italic;
 	text-align: right;
-	border: 1px dashed none;
+	border: 1px dashed yellow;
 }
 
 .countdownC{
