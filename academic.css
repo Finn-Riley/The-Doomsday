@@ -553,7 +553,7 @@ td{
 	gap: 43%;
 	margin-left: 48px;
 	margin-right: 48px;
-	margin-top: 50%;
+	margin-top: 9%;
 	margin-bottom: 2%;
 	border: 1px solid none;
 }
@@ -572,6 +572,7 @@ td{
 	font-size: 10px;
 	font-style: italic;
 	text-align: right;
+	margin-top: 20%;
 	border: 1px dashed none;
 }
 
