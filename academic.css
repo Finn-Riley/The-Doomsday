@@ -548,7 +548,7 @@ td{
 
 .topC{
 	display: flex;
-	flex-direction: column;
+	flex-direction: rows;
 	align-items: none;
 	gap: 43%;
 	margin-left: 48px;
